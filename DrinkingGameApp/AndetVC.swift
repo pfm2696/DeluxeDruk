@@ -110,7 +110,13 @@ class AndetVC: UITableViewController {
         
         // Configure the cell
         cell.textLabel!.text = andet.name
-        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+        
+        let imageView = UIImageView(frame: CGRectMake(10, 10, 30, 30))
+        var image = UIImage(named: "img5.png");
+        imageView.image = image;
+        
+        let checkmark = (imageView);
+        cell.accessoryView = checkmark
         
         return cell
     

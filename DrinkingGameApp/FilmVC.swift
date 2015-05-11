@@ -27,7 +27,6 @@ class FilmVC: UITableViewController {
             Film(category:"Film", name:"Lord Of The Rings")]
         
         // Reload the table
-        
         self.tableView.reloadData()
     }
     
@@ -69,8 +68,17 @@ class FilmVC: UITableViewController {
         
         // Configure the cell
         cell.textLabel!.text = film.name
-        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+        cell.userInteractionEnabled = true;
+        cell.textLabel!.enabled = true;
+        
+        let imageView = UIImageView(frame: CGRectMake(10, 10, 30, 30))
+        var image = UIImage(named: "img5.png");
+        imageView.image = image;
+        
+        let checkmark = (imageView);
+        cell.accessoryView = checkmark
         
         return cell
+
     }
 }

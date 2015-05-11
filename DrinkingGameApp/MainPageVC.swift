@@ -77,6 +77,12 @@ class MainPageVC: UITableViewController, UISearchResultsUpdating {
             "icon4.png",
             "icon5.png"]
         
+        mainArrow = ["img5.png",
+            "img5.png",
+            "img5.png",
+            "img5.png",
+            "img5.png"]
+        
         tableView.estimatedRowHeight = 50
     }
     
@@ -106,6 +112,8 @@ class MainPageVC: UITableViewController, UISearchResultsUpdating {
         let row = indexPath.row
         cell.mainLabel.text = mainNames[row]
         cell.mainImage.image = UIImage(named: mainImages[row])
+        cell.mainArrow.image = UIImage(named: mainArrow[row])
+
         return cell
         }
     }

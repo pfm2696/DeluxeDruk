@@ -63,7 +63,7 @@
                         <color key="separatorColor" red="0.81427185457516338" green="0.778263673004009" blue="0.71303139150934547" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="maincell" rowHeight="66" id="ENx-ig-oDi" customClass="MainPageCell" customModule="Deluxedruk" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="maincell" rowHeight="66" id="ENx-ig-oDi" customClass="MainPageCell" customModule="Deluxedruk" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ENx-ig-oDi" id="5at-gY-gF8">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -73,7 +73,7 @@
                                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="30" id="zGH-EO-dAn"/>
+                                                <constraint firstAttribute="width" constant="30" id="cva-83-fUQ"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Kortspil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnc-kt-JxX">
@@ -82,15 +82,24 @@
                                             <color key="textColor" red="0.1803921568627451" green="0.19607843137254902" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="spK-67-QiX">
+                                            <rect key="frame" x="276" y="18" width="36" height="32"/>
+                                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="cnc-kt-JxX" firstAttribute="leading" secondItem="IvG-XO-rff" secondAttribute="trailing" constant="8" symbolic="YES" id="1J5-z9-4f4"/>
-                                        <constraint firstItem="IvG-XO-rff" firstAttribute="top" secondItem="5at-gY-gF8" secondAttribute="topMargin" constant="10" id="XLh-eL-Hdq"/>
-                                        <constraint firstItem="cnc-kt-JxX" firstAttribute="top" secondItem="5at-gY-gF8" secondAttribute="topMargin" constant="15" id="aGt-CW-6T5"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="cnc-kt-JxX" secondAttribute="bottom" constant="13" id="dnm-MS-cWf"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="cnc-kt-JxX" secondAttribute="trailing" constant="5" id="fZj-em-YrT"/>
-                                        <constraint firstItem="IvG-XO-rff" firstAttribute="leading" secondItem="5at-gY-gF8" secondAttribute="leadingMargin" constant="-7" id="qFA-8b-uDg"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="IvG-XO-rff" secondAttribute="bottom" constant="7" id="uiV-Qg-gB7"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="spK-67-QiX" secondAttribute="trailing" constant="-7" id="5wU-bU-7pE"/>
+                                        <constraint firstItem="spK-67-QiX" firstAttribute="leading" secondItem="cnc-kt-JxX" secondAttribute="trailing" constant="2" id="6zZ-UX-gfC"/>
+                                        <constraint firstItem="cnc-kt-JxX" firstAttribute="centerX" secondItem="5at-gY-gF8" secondAttribute="centerX" id="7va-pL-2Dc"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="IvG-XO-rff" secondAttribute="bottom" constant="7" id="D42-c7-sB4"/>
+                                        <constraint firstItem="IvG-XO-rff" firstAttribute="leading" secondItem="5at-gY-gF8" secondAttribute="leadingMargin" constant="-7" id="NWH-QL-P02"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="cnc-kt-JxX" secondAttribute="bottom" constant="13" id="RmU-2z-6dI"/>
+                                        <constraint firstItem="cnc-kt-JxX" firstAttribute="leading" secondItem="IvG-XO-rff" secondAttribute="trailing" constant="8" symbolic="YES" id="Xgw-Sn-hWI"/>
+                                        <constraint firstItem="spK-67-QiX" firstAttribute="top" secondItem="IvG-XO-rff" secondAttribute="top" id="dOQ-6k-Byi"/>
+                                        <constraint firstItem="IvG-XO-rff" firstAttribute="top" secondItem="5at-gY-gF8" secondAttribute="topMargin" constant="10" id="tFU-Te-QiW"/>
+                                        <constraint firstItem="spK-67-QiX" firstAttribute="bottom" secondItem="IvG-XO-rff" secondAttribute="bottom" id="vKf-WA-PcZ"/>
+                                        <constraint firstItem="cnc-kt-JxX" firstAttribute="top" secondItem="5at-gY-gF8" secondAttribute="topMargin" constant="15" id="xGd-CX-5sO"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.92941176470588238" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
@@ -99,6 +108,7 @@
                                 </accessibility>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
+                                    <outlet property="mainArrow" destination="spK-67-QiX" id="U7a-44-AL7"/>
                                     <outlet property="mainImage" destination="IvG-XO-rff" id="HJc-oS-FEu"/>
                                     <outlet property="mainLabel" destination="cnc-kt-JxX" id="scY-g9-WcO"/>
                                 </connections>
@@ -165,18 +175,18 @@
         <scene sceneID="74M-W3-aQ8">
             <objects>
                 <tableViewController id="PUf-JG-S9h" customClass="TerningspilVC" customModule="Deluxedruk" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6OB-Of-bRP">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="22" sectionFooterHeight="22" id="6OB-Of-bRP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.98739160906262635" green="0.96555972568044102" blue="0.92600917077304656" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="sectionIndexBackgroundColor" red="0.99470439691027934" green="0.96931794211913591" blue="0.9192782833802654" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.97447839290000005" blue="0.92417233320000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="0.97447839290748284" blue="0.92417233324362469" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="terningspilcell" id="d4q-He-8j7">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="terningspilcell" rowHeight="66" id="d4q-He-8j7">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d4q-He-8j7" id="13q-2A-vds">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.99031328914141414" green="0.96503890247744861" blue="0.91522014306798904" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.97447839290000005" blue="0.92417233320000003" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -229,19 +239,19 @@
         <scene sceneID="hpW-AV-TFW">
             <objects>
                 <tableViewController id="U1O-GF-QEV" customClass="BoldspilVC" customModule="Deluxedruk" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="bL6-kc-fhs">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="66" sectionHeaderHeight="22" sectionFooterHeight="22" id="bL6-kc-fhs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.99923987113784907" green="0.96184097065925356" blue="0.90222629141572785" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="sectionIndexBackgroundColor" red="0.98704972519310752" green="0.96185862992595195" blue="0.91220404755919271" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.97447839290000005" blue="0.92417233320000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="0.97447839290748284" blue="0.92417233324362469" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="boldspilcell" id="1Y4-zd-DXC">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="boldspilcell" rowHeight="66" id="1Y4-zd-DXC">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Y4-zd-DXC" id="6TS-Ue-UBX">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" red="0.98739160906262635" green="0.96555972568044102" blue="0.92600917077304656" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.98836016414141414" green="0.96313562436630118" blue="0.91341511897962258" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.97447839290000005" blue="0.92417233320000003" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -269,7 +279,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zxz-HZ-gTh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="646" y="128"/>
+            <point key="canvasLocation" x="651" y="161"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P8X-CE-Ioa">
@@ -292,18 +302,18 @@
         <scene sceneID="tXF-x1-euz">
             <objects>
                 <tableViewController id="Zd6-Si-WRm" customClass="FilmVC" customModule="Deluxedruk" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4dm-eZ-0Tp">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="22" sectionFooterHeight="22" id="4dm-eZ-0Tp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.97913858249999997" green="0.95414939229999995" blue="0.90489278839999998" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="sectionIndexBackgroundColor" red="0.97913858251633989" green="0.95414939232423368" blue="0.90489278837298115" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.97447839290000005" blue="0.92417233320000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="0.97447839290000005" blue="0.92417233320000003" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="filmcell" id="3vu-OR-vOw">
+                            <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="filmcell" rowHeight="66" id="3vu-OR-vOw">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3vu-OR-vOw" id="lll-He-pHv">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.98770076689999997" green="0.96249305600000001" blue="0.91280572230000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.97447839290000005" blue="0.92417233320000003" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -354,19 +364,19 @@
         <scene sceneID="xtR-lL-Qlw">
             <objects>
                 <tableViewController id="1M5-E1-ySQ" customClass="AndetVC" customModule="Deluxedruk" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7GK-iy-eP9">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="22" sectionFooterHeight="22" id="7GK-iy-eP9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.98770076689999997" green="0.96249305600000001" blue="0.91280572230000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="sectionIndexBackgroundColor" red="0.98770076685977426" green="0.96249305596300117" blue="0.91280572225531498" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.97447839290000005" blue="0.92417233320000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="0.97447839290000005" blue="0.92417233320000003" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="andetcell" id="Qac-cL-T6p">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="andetcell" rowHeight="66" id="Qac-cL-T6p">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qac-cL-T6p" id="PRe-0y-eW8">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" red="0.98714627896613183" green="0.96253765258621604" blue="0.91433037851229737" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.98714627896613183" green="0.96253765258621604" blue="0.91433037851229737" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.97447839290000005" blue="0.92417233320000003" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -402,7 +412,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gat-me-MNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="614" y="1402"/>
+            <point key="canvasLocation" x="646" y="1385"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gLF-SA-3SB">
@@ -425,18 +435,18 @@
         <scene sceneID="ijB-nd-udn">
             <objects>
                 <tableViewController id="9Vw-6l-6vM" customClass="KortspilVC" customModule="Deluxedruk" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Dbp-9R-GLA">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="22" sectionFooterHeight="22" id="Dbp-9R-GLA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.99031328914141414" green="0.96503890247744861" blue="0.91522014306798904" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="sectionIndexBackgroundColor" red="0.99031328914141414" green="0.96503890247744861" blue="0.91522014306798904" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.97447839290748284" blue="0.92417233324362469" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="0.97447839290748284" blue="0.92417233324362469" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="kortspilcell" id="L9h-my-pMs">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="kortspilcell" rowHeight="66" id="L9h-my-pMs">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L9h-my-pMs" id="9MQ-rT-DxZ">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.99031328914141414" green="0.96503890247744861" blue="0.91522014306798904" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.97447839290000005" blue="0.92417233320000003" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -478,16 +488,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="evZ-cr-z6f">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="evZ-cr-z6f">
                                 <rect key="frame" x="56" y="20" width="209" height="209"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pyramide.png" translatesAutoresizingMaskIntoConstraints="NO" id="9hI-i0-QhR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pyramide.png" translatesAutoresizingMaskIntoConstraints="NO" id="9hI-i0-QhR">
                                 <rect key="frame" x="72" y="37" width="177" height="171"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="171" id="bok-0B-aUE"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cup-rF-Psg">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cup-rF-Psg">
                                 <rect key="frame" x="16" y="237" width="288" height="311"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
@@ -619,16 +629,16 @@ Hvis personen som du har udnævnt til at drikke, ikke tror på at du har det, sk
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="rjQ-0z-KIE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="rjQ-0z-KIE">
                                 <rect key="frame" x="56" y="28" width="209" height="209"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vandfald.png" translatesAutoresizingMaskIntoConstraints="NO" id="fGL-Ru-s4b">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Vandfald.png" translatesAutoresizingMaskIntoConstraints="NO" id="fGL-Ru-s4b">
                                 <rect key="frame" x="71" y="44" width="177" height="173"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="173" id="3bj-7f-j9x"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UTK-NV-yby">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UTK-NV-yby">
                                 <rect key="frame" x="16" y="245" width="288" height="303"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
@@ -1089,16 +1099,16 @@ Cgo
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="jqu-mf-OwG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="jqu-mf-OwG">
                                 <rect key="frame" x="56" y="28" width="209" height="209"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="overunder.png" translatesAutoresizingMaskIntoConstraints="NO" id="WF8-SK-F8D">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="overunder.png" translatesAutoresizingMaskIntoConstraints="NO" id="WF8-SK-F8D">
                                 <rect key="frame" x="82" y="52" width="157" height="161"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="161" id="YgK-Ya-gvU"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o9B-0Z-cOZ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o9B-0Z-cOZ">
                                 <rect key="frame" x="16" y="245" width="288" height="303"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
@@ -1216,16 +1226,16 @@ Efter hver runde blandes kortene, så de er klar til en ny runde.
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="bh5-uY-crX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="bh5-uY-crX">
                                 <rect key="frame" x="56" y="28" width="209" height="209"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DetTommeGlas.png" translatesAutoresizingMaskIntoConstraints="NO" id="G5n-jv-E5j">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="DetTommeGlas.png" translatesAutoresizingMaskIntoConstraints="NO" id="G5n-jv-E5j">
                                 <rect key="frame" x="76" y="43" width="168" height="169"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="169" id="qGI-ON-zi0"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Toq-ao-HbJ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Toq-ao-HbJ">
                                 <rect key="frame" x="16" y="245" width="288" height="303"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
@@ -1343,8 +1353,17 @@ Turen går hele tiden videre, og spillet slutter når alle glassene er tomme.
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="QVs-fV-EmK">
+                                <rect key="frame" x="56" y="28" width="209" height="213"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cirkel.png" translatesAutoresizingMaskIntoConstraints="NO" id="dOr-QI-fFD">
+                                <rect key="frame" x="80" y="53" width="160" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="UdE-Tk-gGq"/>
+                                </constraints>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oNT-6X-Poe">
-                                <rect key="frame" x="16" y="242" width="288" height="306"/>
+                                <rect key="frame" x="20" y="242" width="245" height="254"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -1456,15 +1475,6 @@ Hvor gang der er gået en runde fjernes kortene som er vendt fra cirklen. Det en
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="QVs-fV-EmK">
-                                <rect key="frame" x="56" y="28" width="209" height="213"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cirkel.png" translatesAutoresizingMaskIntoConstraints="NO" id="dOr-QI-fFD">
-                                <rect key="frame" x="80" y="53" width="160" height="164"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="164" id="UdE-Tk-gGq"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1503,16 +1513,16 @@ Hvor gang der er gået en runde fjernes kortene som er vendt fra cirklen. Det en
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="Oi6-kC-nh6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="Oi6-kC-nh6">
                                 <rect key="frame" x="56" y="28" width="209" height="209"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Meyer.png" translatesAutoresizingMaskIntoConstraints="NO" id="g8o-Jd-THQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Meyer.png" translatesAutoresizingMaskIntoConstraints="NO" id="g8o-Jd-THQ">
                                 <rect key="frame" x="79" y="54" width="162" height="157"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="157" id="Nhs-Sa-9hx"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yWs-ue-eAX">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yWs-ue-eAX">
                                 <rect key="frame" x="16" y="245" width="288" height="303"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
@@ -1974,16 +1984,16 @@ Alle deltagere lægger en terning til siden for hver gang runden går på ny, un
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="hy8-PA-hgA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="hy8-PA-hgA">
                                 <rect key="frame" x="56" y="20" width="209" height="209"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="terningspillet.png" translatesAutoresizingMaskIntoConstraints="NO" id="1VB-k1-4wk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="terningspillet.png" translatesAutoresizingMaskIntoConstraints="NO" id="1VB-k1-4wk">
                                 <rect key="frame" x="73" y="41" width="175" height="167"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="167" id="i9F-rI-tNG"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yyq-Pt-PLG">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yyq-Pt-PLG">
                                 <rect key="frame" x="16" y="237" width="288" height="311"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
@@ -2095,16 +2105,16 @@ Straf tårerne bliver fordoblet, hver gang flere deltagere slår det samme. Kons
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="EWH-tm-qcc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="EWH-tm-qcc">
                                 <rect key="frame" x="56" y="28" width="209" height="209"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Traemand.png" translatesAutoresizingMaskIntoConstraints="NO" id="aom-SW-q24">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Traemand.png" translatesAutoresizingMaskIntoConstraints="NO" id="aom-SW-q24">
                                 <rect key="frame" x="75" y="51" width="170" height="164"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="164" id="bhf-rX-mxf"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5KU-ix-dD1">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5KU-ix-dD1">
                                 <rect key="frame" x="16" y="245" width="288" height="303"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
@@ -2248,16 +2258,16 @@ Turen går på runde efter ét kast med terningen per medspiller.
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="tew-Xq-KiJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="tew-Xq-KiJ">
                                 <rect key="frame" x="56" y="28" width="209" height="209"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="100.png" translatesAutoresizingMaskIntoConstraints="NO" id="N5l-ff-Ppa">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="100.png" translatesAutoresizingMaskIntoConstraints="NO" id="N5l-ff-Ppa">
                                 <rect key="frame" x="74" y="47" width="171" height="169"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="169" id="uZz-jM-muV"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ToT-2x-0MI">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ToT-2x-0MI">
                                 <rect key="frame" x="16" y="245" width="288" height="303"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
@@ -2373,16 +2383,16 @@ Den første deltager der når at nedskrive tallene 1 til 100 vinder. Vinderen m�
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="HoW-mG-avd">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="HoW-mG-avd">
                                 <rect key="frame" x="56" y="20" width="209" height="209"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="711.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uob-cy-mWy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="711.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uob-cy-mWy">
                                 <rect key="frame" x="74" y="33" width="172" height="177"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="177" id="dvd-Tz-qCh"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3NL-CV-ys4">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3NL-CV-ys4">
                                 <rect key="frame" x="16" y="237" width="288" height="311"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
@@ -2497,16 +2507,16 @@ Der må kun drikkes med højre hånd i spillet. Drikkes der med venstre hånd sk
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y5V-ND-GwQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y5V-ND-GwQ">
                                 <rect key="frame" x="56" y="28" width="209" height="209"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beerpong.png" translatesAutoresizingMaskIntoConstraints="NO" id="51l-nu-r6c">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Beerpong.png" translatesAutoresizingMaskIntoConstraints="NO" id="51l-nu-r6c">
                                 <rect key="frame" x="70" y="45" width="175" height="173"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="173" id="MOi-Ge-jnm"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q1x-a0-2Kd">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q1x-a0-2Kd">
                                 <rect key="frame" x="16" y="245" width="288" height="303"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
@@ -2626,16 +2636,16 @@ Hvert hold må én enkelt gang benytte sig af “samle reglen”, som er en rege
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Xc-o7-amn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Xc-o7-amn">
                                 <rect key="frame" x="56" y="28" width="209" height="209"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ølbowling.png" translatesAutoresizingMaskIntoConstraints="NO" id="E98-Md-GRI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Ølbowling.png" translatesAutoresizingMaskIntoConstraints="NO" id="E98-Md-GRI">
                                 <rect key="frame" x="71" y="48" width="178" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="ZUp-hb-HJZ"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q5T-qT-BwY">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q5T-qT-BwY">
                                 <rect key="frame" x="16" y="245" width="288" height="309"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
@@ -2900,16 +2910,16 @@ Spillet kan godt blive langt, så det anbefales at krydre sejren, ved at taberen
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="NhC-nq-0sN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="NhC-nq-0sN">
                                 <rect key="frame" x="56" y="28" width="209" height="209"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gris.png" translatesAutoresizingMaskIntoConstraints="NO" id="mXZ-RO-eoI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Gris.png" translatesAutoresizingMaskIntoConstraints="NO" id="mXZ-RO-eoI">
                                 <rect key="frame" x="74" y="48" width="172" height="169"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="169" id="CS2-5d-PUN"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZLP-Cd-P7N">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZLP-Cd-P7N">
                                 <rect key="frame" x="16" y="237" width="288" height="311"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
@@ -3028,16 +3038,16 @@ Man har fire bogstaver - g-r-i-s. Hver gang man er skyld i at tabe bolden får m
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="IsY-G2-Zah">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="IsY-G2-Zah">
                                 <rect key="frame" x="56" y="28" width="209" height="209"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dudewheresmycar.png" translatesAutoresizingMaskIntoConstraints="NO" id="yIK-Jx-5Fs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Dudewheresmycar.png" translatesAutoresizingMaskIntoConstraints="NO" id="yIK-Jx-5Fs">
                                 <rect key="frame" x="73" y="45" width="171" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="OiH-dB-aBX"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ft0-3G-GbH">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ft0-3G-GbH">
                                 <rect key="frame" x="16" y="245" width="288" height="303"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
@@ -3164,16 +3174,16 @@ Og hvis i vil være rigtige fulde tager i en tår hver gang:
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="aIy-v6-3Vq">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="aIy-v6-3Vq">
                                 <rect key="frame" x="56" y="28" width="209" height="209"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LordOfTheRings.png" translatesAutoresizingMaskIntoConstraints="NO" id="fIh-OO-bit">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LordOfTheRings.png" translatesAutoresizingMaskIntoConstraints="NO" id="fIh-OO-bit">
                                 <rect key="frame" x="64" y="41" width="188" height="178"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="178" id="ark-LW-B1b"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NeQ-GJ-bBP">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NeQ-GJ-bBP">
                                 <rect key="frame" x="16" y="245" width="288" height="303"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
@@ -3344,16 +3354,16 @@ Og hvis i vil være rigtige fulde tager i en tår hver gang:
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="kJf-1s-oo1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="kJf-1s-oo1">
                                 <rect key="frame" x="56" y="28" width="209" height="209"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Friends.png" translatesAutoresizingMaskIntoConstraints="NO" id="IHc-mD-Tie">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Friends.png" translatesAutoresizingMaskIntoConstraints="NO" id="IHc-mD-Tie">
                                 <rect key="frame" x="73" y="43" width="175" height="173"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="173" id="4Va-UF-kKn"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cyF-sT-bQb">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cyF-sT-bQb">
                                 <rect key="frame" x="16" y="245" width="288" height="303"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
@@ -3546,16 +3556,16 @@ Og hvis i vil være rigtige fulde tager i en tår hver gang:
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yud-aQ-6M9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yud-aQ-6M9">
                                 <rect key="frame" x="56" y="28" width="209" height="209"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeAlone.png" translatesAutoresizingMaskIntoConstraints="NO" id="XDO-EQ-T1b">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="HomeAlone.png" translatesAutoresizingMaskIntoConstraints="NO" id="XDO-EQ-T1b">
                                 <rect key="frame" x="75" y="46" width="172" height="168"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="168" id="E4t-2C-WVF"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4yw-zH-s8a">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4yw-zH-s8a">
                                 <rect key="frame" x="16" y="245" width="288" height="303"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
@@ -3715,16 +3725,16 @@ Og hvis i vil være rigtige fulde tager i en tår hver gang:
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="1n4-bA-yGP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="1n4-bA-yGP">
                                 <rect key="frame" x="56" y="28" width="209" height="209"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JamesBond.png" translatesAutoresizingMaskIntoConstraints="NO" id="Csk-o3-qM6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="JamesBond.png" translatesAutoresizingMaskIntoConstraints="NO" id="Csk-o3-qM6">
                                 <rect key="frame" x="73" y="45" width="173" height="169"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="169" id="MdD-xA-88i"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ofj-Uj-S7U">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ofj-Uj-S7U">
                                 <rect key="frame" x="16" y="245" width="288" height="303"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
@@ -5228,9 +5238,6 @@ En klassisk straf er, at man skal købe den næste runde (øl, cider etc.), men 
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="dRa-OO-aMr">
-                                <rect key="frame" x="16" y="72" width="288" height="161"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7p9-RO-EsH">
                                 <rect key="frame" x="16" y="226" width="288" height="334"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -5317,29 +5324,32 @@ Det tabende hold tager en konsekvens, som besluttes før spillets start.
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xng-SA-KtD">
+                                <rect key="frame" x="68" y="64" width="184" height="171"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FlipTheCup.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Xc-Sc-tM3">
-                                <rect key="frame" x="73" y="83" width="183" height="133"/>
+                                <rect key="frame" x="97" y="84" width="141" height="132"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="133" id="dLR-Ve-Jwv"/>
+                                    <constraint firstAttribute="height" constant="132" id="NVo-Yu-kq8"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="dRa-OO-aMr" firstAttribute="trailing" secondItem="7p9-RO-EsH" secondAttribute="trailing" id="3ms-C3-CUt"/>
-                            <constraint firstItem="7Xc-Sc-tM3" firstAttribute="leading" secondItem="FEC-fX-rlj" secondAttribute="leadingMargin" constant="57" id="7IF-nC-NnK"/>
-                            <constraint firstItem="7p9-RO-EsH" firstAttribute="top" secondItem="7Xc-Sc-tM3" secondAttribute="bottom" constant="10" id="8tN-6T-Dub"/>
-                            <constraint firstItem="LPJ-AO-Pjz" firstAttribute="top" secondItem="dRa-OO-aMr" secondAttribute="bottom" constant="335" id="Eep-b9-7TJ"/>
-                            <constraint firstAttribute="trailing" secondItem="dfZ-UO-ngB" secondAttribute="trailing" id="HXq-c3-1Dg"/>
-                            <constraint firstItem="dfZ-UO-ngB" firstAttribute="leading" secondItem="FEC-fX-rlj" secondAttribute="leading" id="K3w-xB-dzP"/>
-                            <constraint firstItem="dRa-OO-aMr" firstAttribute="leading" secondItem="7p9-RO-EsH" secondAttribute="leading" id="LUs-fP-8GB"/>
-                            <constraint firstItem="7Xc-Sc-tM3" firstAttribute="top" secondItem="wp4-OU-Lrz" secondAttribute="bottom" constant="19" id="ZIX-wF-Gos"/>
-                            <constraint firstItem="7p9-RO-EsH" firstAttribute="leading" secondItem="FEC-fX-rlj" secondAttribute="leadingMargin" id="ZoU-4K-7Tl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7Xc-Sc-tM3" secondAttribute="trailing" constant="48" id="cqH-lG-dYv"/>
-                            <constraint firstItem="dfZ-UO-ngB" firstAttribute="bottom" secondItem="wp4-OU-Lrz" secondAttribute="bottom" id="o5H-BC-N0m"/>
-                            <constraint firstItem="dRa-OO-aMr" firstAttribute="centerX" secondItem="dfZ-UO-ngB" secondAttribute="centerX" id="qa2-8V-Oke"/>
-                            <constraint firstItem="LPJ-AO-Pjz" firstAttribute="top" secondItem="7p9-RO-EsH" secondAttribute="bottom" constant="8" symbolic="YES" id="qdI-yX-NWZ"/>
-                            <constraint firstItem="dRa-OO-aMr" firstAttribute="top" secondItem="wp4-OU-Lrz" secondAttribute="bottom" constant="8" symbolic="YES" id="rSN-6Z-l0x"/>
+                            <constraint firstItem="dfZ-UO-ngB" firstAttribute="centerX" secondItem="Xng-SA-KtD" secondAttribute="centerX" id="2xs-un-53a"/>
+                            <constraint firstItem="7p9-RO-EsH" firstAttribute="centerX" secondItem="Xng-SA-KtD" secondAttribute="centerX" id="Dip-Ll-xCw"/>
+                            <constraint firstAttribute="trailing" secondItem="dfZ-UO-ngB" secondAttribute="trailing" id="E1w-OD-VeY"/>
+                            <constraint firstItem="7p9-RO-EsH" firstAttribute="leading" secondItem="FEC-fX-rlj" secondAttribute="leadingMargin" id="EQw-a0-sjo"/>
+                            <constraint firstItem="Xng-SA-KtD" firstAttribute="leading" secondItem="FEC-fX-rlj" secondAttribute="leadingMargin" constant="52" id="J3I-9j-wsp"/>
+                            <constraint firstItem="7Xc-Sc-tM3" firstAttribute="top" secondItem="wp4-OU-Lrz" secondAttribute="bottom" constant="20" id="M4c-M4-i1P"/>
+                            <constraint firstItem="dfZ-UO-ngB" firstAttribute="leading" secondItem="FEC-fX-rlj" secondAttribute="leading" id="NaL-uK-f53"/>
+                            <constraint firstItem="LPJ-AO-Pjz" firstAttribute="top" secondItem="Xng-SA-KtD" secondAttribute="bottom" constant="333" id="Ql5-KM-LiY"/>
+                            <constraint firstItem="Xng-SA-KtD" firstAttribute="top" secondItem="dfZ-UO-ngB" secondAttribute="bottom" id="T7U-rt-yfy"/>
+                            <constraint firstItem="7Xc-Sc-tM3" firstAttribute="leading" secondItem="FEC-fX-rlj" secondAttribute="leadingMargin" constant="81" id="Vdv-Eu-suy"/>
+                            <constraint firstItem="Xng-SA-KtD" firstAttribute="top" secondItem="wp4-OU-Lrz" secondAttribute="bottom" id="X9D-gL-4hd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Xc-Sc-tM3" secondAttribute="trailing" constant="66" id="a0e-L3-FOm"/>
+                            <constraint firstItem="7p9-RO-EsH" firstAttribute="top" secondItem="7Xc-Sc-tM3" secondAttribute="bottom" constant="10" id="smb-Pz-F4m"/>
+                            <constraint firstItem="LPJ-AO-Pjz" firstAttribute="top" secondItem="7p9-RO-EsH" secondAttribute="bottom" constant="8" symbolic="YES" id="uIn-J9-E8W"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Flip The Cup" id="dqo-GI-PRJ"/>
@@ -6608,7 +6618,7 @@ Herefter starter runden på ny, hvor det er deltageren, der var tættest på må
         <image name="Ølstafet.png" width="315" height="315"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="erp-8t-UcF"/>
+        <segue reference="Xly-NY-wzX"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

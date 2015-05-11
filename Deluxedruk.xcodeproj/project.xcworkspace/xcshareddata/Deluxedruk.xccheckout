@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>496C80F7-9FCC-436B-949B-F7D9EC9D17E2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Deluxedruk</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9DBF568F562946AFA484E4A9C0052DC225BF0ACF</key>
+		<string>https://github.com/pfm2696/DeluxeDruk.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Deluxedruk.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9DBF568F562946AFA484E4A9C0052DC225BF0ACF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/pfm2696/DeluxeDruk.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9DBF568F562946AFA484E4A9C0052DC225BF0ACF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9DBF568F562946AFA484E4A9C0052DC225BF0ACF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DrinkingGameApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

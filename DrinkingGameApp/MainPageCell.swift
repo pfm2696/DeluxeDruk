@@ -11,5 +11,5 @@ import UIKit
 class MainPageCell: UITableViewCell {
     @IBOutlet var mainImage: UIImageView!
     @IBOutlet var mainLabel: UILabel!
-    
+    @IBOutlet var mainArrow: UIImageView!
 }
